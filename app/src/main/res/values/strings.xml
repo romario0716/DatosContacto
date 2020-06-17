@@ -11,6 +11,6 @@
     <string name="LabelConfirmar_FechaNacimiento">Fecha</string>
     <string name="LabelConfirmar_Telefono">Teléfono</string>
     <string name="LabelConfirmar_Email">Email</string>
-    <string name="LabelConfirmar_DescripcionContacto">Descripción</string>
+    <string name="LabelConfirmar_DescripcionContacto">Descripción Contacto</string>
     <string name="btn_editar">EDITAR DATOS</string>
 </resources>

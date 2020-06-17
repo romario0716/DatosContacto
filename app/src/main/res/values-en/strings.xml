@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Contact details</string>
+    <string name="campo_nombre_completo">Full name: </string>
+    <string name="campo_fecha_nacimiento">Birth date: </string>
+    <string name="campo_telefono">Phone: </string>
+    <string name="campo_email">Email: </string>
+    <string name="campo_descripcion_contacto">Description Contact: </string>
+    <string name="btn_siguiente">FOLLOWING</string>
+    <string name="labelConfirmar_titulo">CONFIRM DATA</string>
+    <string name="LabelConfirmar_NombreCompleto">Name</string>
+    <string name="LabelConfirmar_FechaNacimiento">Date</string>
+    <string name="LabelConfirmar_Telefono">Phone</string>
+    <string name="LabelConfirmar_Email">Email</string>
+    <string name="LabelConfirmar_DescripcionContacto">Description Contact</string>
+    <string name="btn_editar">EDIT DATA</string>
+</resources>
