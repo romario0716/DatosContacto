@@ -36,10 +36,10 @@
             android:id="@+id/textViewNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:paddingStart="5dp"
             android:paddingLeft="5dp"
-            android:textSize="@dimen/texto_Confirmar_Size"
-            android:layout_gravity="center"/>
+            android:textSize="@dimen/texto_Confirmar_Size" />
 
 
     </LinearLayout>
