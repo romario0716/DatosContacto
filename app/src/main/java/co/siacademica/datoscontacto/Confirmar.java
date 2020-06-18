@@ -3,6 +3,7 @@ package co.siacademica.datoscontacto;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -24,10 +25,17 @@ public class Confirmar extends AppCompatActivity {
 
         Bundle parametros = getIntent().getExtras();
         final String nombre = parametros.getString(getResources().getString(R.string.LabelConfirmar_NombreCompleto));
-        String fecha = parametros.getString(getResources().getString(R.string.LabelConfirmar_FechaNacimiento));
+        //esta opcion no srive para utilizar la fucnion update de datepicker por lo que toca separar la fecha
+        //final String fecha = parametros.getString(getResources().getString(R.string.LabelConfirmar_FechaNacimiento));
+        final int fecha_dia    = parametros.getInt(getResources().getString(R.string.LabelConfirmar_FechaNacimiento));
+        final int fecha_mes    = parametros.getInt(getResources().getString(R.string.LabelConfirmar_FechaNacimiento_Mes));
+        final int fecha_anio    = parametros.getInt(getResources().getString(R.string.LabelConfirmar_FechaNacimiento_year));
         final String telefono = parametros.getString(getResources().getString(R.string.LabelConfirmar_Telefono));
         final String email = parametros.getString(getResources().getString(R.string.LabelConfirmar_Email));
         final String descripcion = parametros.getString(getResources().getString(R.string.LabelConfirmar_DescripcionContacto));
+
+        //al mes le coloqué mas 1 para que muestre la fecha bien
+        String fecha  =  fecha_dia+"/"+ (fecha_mes + 1)+"/"+fecha_anio;
 
         textViewNombre = (TextView) findViewById(R.id.textViewNombre);
         textViewFecha = (TextView) findViewById(R.id.textViewFecha);
@@ -47,6 +55,15 @@ public class Confirmar extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(Confirmar.this, MainActivity.class);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_NombreCompleto),nombre);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_FechaNacimiento_year),fecha_anio);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_FechaNacimiento_Mes),fecha_mes);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_FechaNacimiento),fecha_dia);
+                //esta opcion no srive para utilizar la fucnion update de datepicker por lo que toca separar la fecha
+                //intent.putExtra(getResources().getString(R.string.LabelConfirmar_FechaNacimiento),fecha);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_Telefono),telefono);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_Email),email);
+                intent.putExtra(getResources().getString(R.string.LabelConfirmar_DescripcionContacto),descripcion);
                 startActivity(intent);
                 finish();
 
