@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#BEF4A2</color>
     <color name="colorAccent">#0EAFD2</color>
     <color name="colorBotones">#FFFFFF</color>
+    <color name="colorErrorSnackBar">#F30909</color>
 </resources>

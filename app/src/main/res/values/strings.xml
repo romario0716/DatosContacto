@@ -13,4 +13,9 @@
     <string name="LabelConfirmar_Email">Email</string>
     <string name="LabelConfirmar_DescripcionContacto">Descripción Contacto</string>
     <string name="btn_editar">EDITAR DATOS</string>
+    <string name="mensaje_CampoNombre_Obligatorios">Por favor ingresar un Nombre Completo</string>
+    <string name="mensaje_CampoTelefono_Obligatorios">Por favor ingresar un Teléfono de Contacto</string>
+    <string name="mensaje_CampoEmail_Obligatorios">Por favor ingresar un Email de Contacto</string>
+    <string name="LabelConfirmar_FechaNacimiento_Mes">Mes</string>
+    <string name="LabelConfirmar_FechaNacimiento_year">Años</string>
 </resources>
